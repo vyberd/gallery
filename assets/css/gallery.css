@@ -3,3 +3,17 @@
 	margin-top: 2rem;
 	margin-bottom: 2rem;
 }
+
+.color0 .swiper-pagination-bullet {
+	background-color: var(--color0-text);
+}
+.color0 .swiper-pagination-bullet-active {
+	background-color: var(--color0-accent2);
+}
+
+.color1 .swiper-pagination-bullet {
+	background-color: var(--color1-text);
+}
+.color1 .swiper-pagination-bullet-active {
+	background-color: var(--color1-accent);
+}
