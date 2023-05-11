@@ -2,13 +2,9 @@
 {{ partial "head/script" (dict "name" "js/gallery.js" "noasync" true) }}
 {{ partial "stylesheet" (dict "name" "css/swiper.css") }}
 {{ partial "stylesheet" (dict "name" "css/gallery.css") }}
-<div class="gallery">
+<div class="swiper">
 	<div class="swiper-wrapper">
-		{{ range .Page.Resources.ByType "image" }}
-			<div class="swiper-slide">
-				{{ partial "picture" (dict "ctx" . "width" 500 "height" 500) }}
-			</div>
-		{{ end }}
+		{{ .Inner }}
 	</div>
 	<div class="swiper-pagination"></div>
 </div>

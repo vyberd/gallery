@@ -1,5 +1,5 @@
 function initGalleries() {
-	const swiper = new Swiper('.swiper', {
+	const swiper = new Swiper('.gallery', {
 		slidesPerView: 1,
 		spaceBetween: 10,
 		pagination: {
@@ -13,7 +13,18 @@ function initGalleries() {
 		}
 	});
 }
+function initSwiper(slidesPerView) {
+	const swiper = new Swiper('.swiper', {
+		slidesPerView: 1,
+		spaceBetween: 10,
+		  pagination: {
+		    el: '.swiper-pagination',
+		  },
+	});
+}
 window.addEventListener("DOMContentLoaded", function () {
 	initGalleries();
+	initSwiper();
 });
 initGalleries();
+initSwiper();
