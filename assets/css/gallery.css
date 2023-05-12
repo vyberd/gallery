@@ -1,7 +1,16 @@
-.swiper {
+.swiper-gallery {
 	width: 90%;
 	margin-top: 2rem;
 	margin-bottom: 2rem;
+}
+
+.swiper {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper .swiper-slide {
+	height: auto;
 }
 
 .swiper-pagination-bullet {
